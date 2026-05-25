@@ -1,0 +1,46 @@
+# Third-party simulators and tools (not our code)
+ns-3-dev/
+netanim/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+
+# Build artifacts
+build/
+cmake-build-*/
+*.o
+*.a
+*.la
+*.lo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+
+# Large data files (keep small samples only)
+*.pcap
+*.pcapng
