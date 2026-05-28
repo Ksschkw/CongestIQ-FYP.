@@ -4,7 +4,7 @@
 set -e  # Exit on any error
 
 PROJECT_ROOT="$HOME/Projects/fyp"
-DOCS_DIR="$PROJECT_ROOT/docs"
+DOCS_DIR="$PROJECT_ROOT/docu"
 
 echo "============================================"
 echo "  MARL TCP FYP - Documentation Scaffold"
@@ -21,9 +21,9 @@ if [ ! -d "$PROJECT_ROOT" ]; then
     exit 1
 fi
 
-# Create docs root
+# Create docu root
 mkdir -p "$DOCS_DIR"
-echo "[1/8] Created docs/ root"
+echo "[1/8] Created docu/ root"
 
 # M1: Network Sandbox
 mkdir -p "$DOCS_DIR/m1-network-sandbox"/{code,results,videos,notes}
@@ -59,6 +59,6 @@ echo "  Documentation scaffold created."
 echo "============================================"
 echo ""
 echo "Structure:"
-find "$DOCS_DIR" -type d | sed "s|$DOCS_DIR|docs|" | sort
+find "$DOCS_DIR" -type d | sed "s|$DOCS_DIR|docu|" | sort
 echo ""
 echo "Next step: Write M1 README and get the topology script."
